@@ -1,0 +1,65 @@
+@mixin mat-list-icon($size: 24px) {
+    font-size: $size;
+    height: $size;
+    width: $size;
+}
+
+@mixin mat-chip() {
+    padding: 1px 7px;
+}
+
+@mixin sidemenu-item($theme, $icon-size) {
+    .sidenav-dropdown-indicator {
+        transition: transform .25s;
+        &.indicateOpen {
+            transform: rotate(90deg);
+        }
+    }
+    mat-nav-list {
+        overflow: hidden;
+        padding-top: 0px;
+    }
+    .primary {
+        transition: max-height .4s cubic-bezier(.35, 0, .25, 1);
+        padding-top: 0px;
+    }
+    .secondaryMenu {
+        // background:  mat-color($primary, 500); ;
+        background: #424242;
+        transition: max-height .4s cubic-bezier(.35, 0, .25, 1);
+        padding-top: 0px;
+    }
+    .mat-nav-list .mat-list-item .mat-list-icon {
+        @include mat-list-icon($icon-size);
+    }
+    .mat-chip:not(.mat-basic-chip) {
+        @include mat-chip()
+    }
+    .mat-nav-list .mat-list-item {
+        font-size: 14px;
+    }
+    .mat-list-item-content:hover{
+        background: #684935;
+    }
+    .mat-list-text:hover{
+        background: transparent;
+        color: #ff6600;
+    }
+    .active-item {
+        background: #00AAAC;
+      }
+      .hover-item{
+          background: none;
+          color: #ff6600;
+      }
+      .non-hover-item{
+          background: none;
+          color: #ffffff;
+      }
+      .non-active-item{
+          background: none;
+      }
+    // .mat-nav-list .mat-list-item:hover {
+    //     color: #684935;
+    // }
+}

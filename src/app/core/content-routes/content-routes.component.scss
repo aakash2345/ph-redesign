@@ -1,0 +1,60 @@
+.content-top {
+//   padding-top: 13px;
+//   padding-bottom: 27px;
+}
+
+h1.al-title {
+  font-weight: bold;
+  color: #000000;
+  float: right;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.al-breadcrumb {
+  background: none;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-top: 11px;
+  li {
+    font-size: 16px;
+    font-weight:bold;
+    a {
+      color: #353535;
+      text-decoration: none;
+
+    }
+    &.breadcrumb-item.active {
+      color: #000000;
+      text-transform: capitalize;
+    }
+  }
+}
+.breadcrumb .breadcrumb-item:nth-child(2)::before {
+  content: "";
+}
+.breadcrumb-item+.breadcrumb-item {
+  padding-left: 0;
+}
+
+.al-look {
+  float: right;
+  margin-right: 10px;
+  padding-top: 10px;
+  >a {
+    font-size: 19px;
+  }
+}
+
+// .home{
+//   font-size: 26px;
+// }
+// .title{
+//  font-size: 26px;
+// }
